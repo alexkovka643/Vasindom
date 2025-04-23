@@ -1,22 +1,23 @@
 name: Start Aternos Server
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # каждый час
-  workflow_dispatch:     # запуск вручную
+  workflow_dispatch:  # Позволяет запускать вручную
 
 jobs:
   start-server:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Клонирование репозитория
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Установка Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Run script
+      - name: Установка зависимостей
+        run: pip install requests
+
+      - name: Запуск скрипта
         run: python autostart.py
