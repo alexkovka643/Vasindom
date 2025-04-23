@@ -3,7 +3,7 @@ import time
 
 # Заменить на свой ATERNOS_SESSION
 cookies = {
-    "ATERNOS_SESSION": "tIDSgnEMrWjpusHMDhCzM2FIpNbs6irXEVGFslO9nf0DbQDKY6eS95DfMqFYHEEzKhbQoqrulzXxnu91Mfxn2hs5LU0ao3EUoXLt"
+     "tIDSgnEMrWjpusHMDhCzM2FIpNbs6irXEVGFslO9nf0DbQDKY6eS95DfMqFYHEEzKhbQoqrulzXxnu91Mfxn2hs5LU0ao3EUoXLt"
 }
 
 headers = {
